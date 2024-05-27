@@ -1,0 +1,31 @@
+<%-include('./partials/header')%>
+<%-include('./partials/navbar')%>
+
+
+    <h2>Add user </h2>
+
+    <form action="/user/add" method="POST">
+        <div class="conatiner w-50">
+            <div class="row">
+                <div class="">
+                    <label for="name">Name: </label>
+                    <input type="text"  id="name" name="name">
+                </div> 
+                <div class="">
+                    <label for="id">Employee Id: </label>
+                    <input type="number"  id="id" name="id">
+                </div> 
+                <div class="">
+                    <label for="password">Employee Password: </label>
+                    <input type="password"  id="password" name="password">
+                </div> 
+                <div class="">
+                    <label for="date">Join date: </label>
+                    <input type="date"  id="date" name="joinDate">
+                </div> 
+                <button class="btn text-start bg-success w-25 m-5" type="submit"> submit</button>
+            </div>
+        </div>
+    </form>
+
+<%-include('./partials/footer')%>

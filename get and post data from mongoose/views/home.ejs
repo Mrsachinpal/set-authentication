@@ -1,0 +1,14 @@
+<%-include('./partials/header')%>
+    <%-include('./partials/navbar')%>
+        <!-- <h1>This is home page </h1> -->
+        <% for(let item of userdata){%>
+            <div class="conatiner bg-success p-4">
+                <h3>Name:<%=item.name%></h3>
+                <h4>ID: <%=item.id%></h4>
+                <h4>Password: <%=item.password%></h4>
+                <h4>Join date: <%=item.joinDate.toLocaleDateString()%></h4>
+            </div>
+            <hr>
+        <%}%>
+
+<%-include('./partials/footer')%>

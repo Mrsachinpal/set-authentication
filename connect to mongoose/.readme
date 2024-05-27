@@ -1,0 +1,10 @@
+1. connect with server 8080
+2. set view engine (ejs)
+3. set views and public folder with __dirname.
+4. make route/pages.js file and link to main file.
+5. make root route and render to home.ejs
+6. require mongoose
+7. setup mongoose in main file.
+8. make schema(User.js) in model
+9. make seed.js file and add some data accoring to schema. 
+10. require seed file in main file and then call function (seedDb()).

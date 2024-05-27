@@ -1,0 +1,32 @@
+1. connect with server 8080
+2. set view engine (ejs)
+3. set views and public folder with __dirname.
+4. make route/pages.js file and link to main file.
+5. make root route and render to home.ejs
+6. require mongoose
+7. setup mongoose in main file.
+8. make schema(User.js) in model
+9. make seed.js file and add some data accoring to schema. 
+10. require seed file in main file and then call function (seedDb()).
+<!-- --------------------------------------------------- -->
+11. make some changes on route (if i want to get all db data on root route then i need to call db to send data).
+12. target file according to your changed route... on that file iterate array and then called it by their name eg:-(item.name,item.bio,item.email). 
+13. make get route for render form file like(addUser.ejs).
+13. for data post in db. make form in any file. 
+14. require method override and set code override.
+15. make one more route for post data.
+16. add:- app.use(express.urlencoded({ extended: true }))  if you didn't add this line you got undefined in error
+<!-- -------------------------------------------------- --> edit
+17. make one route for edit and make one .ejs file for edit 
+18. add show button where your users are shown in ejs file and pass user id. with the help of href.
+19. assign previous value in form (value="<% user.name%>").     (edit.ejs file)
+<!-- ------------------------------------------------ -->  patch data
+20. make one route for patch and set action and method in form.
+21. for patch you have to install method-override and set method override in main file. (    app.use(methodOverride('_method'));   )
+22. in router we have to get user id with params and then use findbyidandupdate.
+<!-- -------------------------------------------------- --> delete
+23. for delete you have to make one route.
+24. make one button in form and add action or method. place that butotn where your all content are shown.
+<!-- -------------------------------------------------- --> authenticate
+25. 
+

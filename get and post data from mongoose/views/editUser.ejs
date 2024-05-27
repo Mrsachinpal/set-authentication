@@ -1,0 +1,15 @@
+<%-include('./partials/header')%>
+<%-include('./partials/navbar')%>
+
+<form action="/user/edit/<%=user._id%>?_method=PATCH" method="POST">
+    <div class="conatiner">
+        <div class="row">
+            <div class=""><input type="text" placeholder="Enter name" name="name" value="<%=user.name %>" ></div> 
+            <div class=""><input type="text" placeholder="Enter Bio" name="bio" value="<%=user.bio %>" ></div> 
+            <div class=""><input type="email" placeholder="Enter Email" name="email" value="<%=user.email%>"></div> 
+            <button type="submit"> submit</button>
+        </div>
+    </div>
+</form>
+
+

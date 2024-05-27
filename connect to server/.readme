@@ -1,0 +1,6 @@
+1. connect with server 8080
+2. set view engine (ejs)
+3. set views and public folder with __dirname.
+4. make route/pages.js file and link to main file.
+5. make root route and render to home.ejs
+
